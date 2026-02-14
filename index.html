@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <style>
+        body {
+            background-color: #ffcccc; /* Light red background */
+            color: #4b0038; /* Dark purple text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        h1 {
+            color: #b30000; /* Dark red */
+            text-shadow: 2px 2px 5px #000000; /* Black shadow */
+        }
+        .heart {
+            display: inline-block;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+            background: red;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day!</h1>
+    <div class="heart"></div>
+    <p>Surprise your loved one with love and joy!</p>
+    <button onclick="alert('Happy Valentine! 💖')">Click for a Surprise!</button>
+</body>
+</html>
